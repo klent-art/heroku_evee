@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evee Artstation</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<style>
+		.main{
+		height: 100vh;
+		background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/hero.jpg);
+		background-position: center;
+		background-size: cover;
+		overflow-x: hidden;
+	}
+		.bannerTitle{
+		margin: 80px 130px;
+		color: #fff;
+		text-align: center;
+	}
+		.bannerTitle h1{
+		font-size: 45px;
+		margin: 50px 80px;
+		text-align: center;
+	}
+	form{
+		margin-top: 50px;
+	}
+	input{
+		width: 100%;
+
+	}
+	</style>
+
+</head>
+<body>
+	<div class="main">
+	<div class="navBar">
+		<div class="navLogo">
+			<img src="images/EVEE.png">
+		</div>
+			<div class="navLinks">
+				<ul>
+					<a href="home.html"><li>HOME</li></a>
+					<a href="gallery.html"><li>GALLERY</li></a>
+					<a href="contact.html"><li>CONTACT</li></a>
+					<a href="about.html"><li>ABOUT</li></a>
+				</ul>
+				<button type="button" class="btn" onclick="openForm()">SIGN UP</button>
+			</div>
+		</div>
+		<div class="bannerTitle">
+			<h1>PLAY BEYOND YOUR IMAGINATION</h1>
+			<a><button type="button" class="btn">EXPLORE</button></a>
+		</div>
+			<div class="searchBox">
+				<input type="text" name="box" placeholder="Search anything you like. . .">
+			</div>
+	</div>
+
+	<div id="myOverlay" class="overlay">
+	<span class="closebtn" onclick="closeForm()" title="Close Overlay"> &#215</span>
+	<div class="wrap">
+		<form>
+			<h2>Sign In</h2>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>First Name</span>
+			</div>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Last Name</span>
+			</div>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Email or Phone</span>
+			</div>
+				<div class="inputBox">
+					<input type="password" name="" required="required">
+					<span>Password</span>
+			</div>
+				<div class="inputBox">
+					<input type="password" name="" required="required">
+					<span>Confirm Password</span>
+			</div>
+
+				<div class="inputBox">
+					<input type="submit" name="" value="Join Now">
+						
+			</div>
+		</form>
+
+	</div>
+	</div>
+
+	<footer>
+		<div class="socials">
+		<ul>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		</div>
+			<p>copyright &copy;2020 evee. designed by <span>KlentLabagday</span></p>
+
+	</footer>
+
+
+
+
+</body>
+</html>

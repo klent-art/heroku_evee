@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evee | Gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/script.js">
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+			.main{
+			background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/rain.jpg);
+			background-position: center;
+			background-size: cover;
+			overflow-x: hidden;
+		}
+			.gallery{
+			position: relative;
+			margin: 60px 0;
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			padding: 4px;
+		}
+			.gallery img{
+			transition: .5s;
+			max-width: 100%;
+  			height: auto;
+  			align-items: stretch;
+  			display: flex;
+  			filter: grayscale(100%);
+		}
+			.gallery img:hover{
+			filter: saturate(100%);
+			
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="main">
+	<div class="navBar">
+		<div class="navLogo">
+			<img src="images/EVEE.png">
+		</div>
+			<div class="navLinks">
+				<ul>
+					<a href="home.html"><li>HOME</li></a>
+					<a href="gallery.html"><li>GALLERY</li></a>
+					<a href="contact.html"><li>CONTACT</li></a>
+					<a href="about.html"><li>ABOUT</li></a>
+				</ul>
+				<button type="button" class="btn" onclick="openForm()">SIGN UP</button>
+			</div>
+		</div>
+		
+		<div id="myOverlay" class="overlay">
+	<span class="closebtn" onclick="closeForm()" title="Close Overlay"> &#215</span>
+	<div class="wrap">
+		<form>
+			<h2>Sign In</h2>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>First Name</span>
+			</div>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Last Name</span>
+			</div>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Email or Phone</span>
+			</div>
+				<div class="inputBox">
+					<input type="password" name="" required="required">
+					<span>Password</span>
+			</div>
+				<div class="inputBox">
+					<input type="password" name="" required="required">
+					<span>Confirm Password</span>
+			</div>
+
+				<div class="inputBox">
+					<input type="submit" name="" value="Join Now">
+						
+			</div>
+		</form>
+
+	</div>
+	</div>
+
+				<div class="gallery">
+					<a href="images/arts/abstract.png" data-lightbox="mygallery" data-title="Abstract Sphere">
+						<img src="images/arts/abstract.png"></a>
+					<a href="images/arts/bulb.png" data-lightbox="mygallery" data-title="Its a Bulb">
+						<img src="images/arts/bulb.png"></a>
+					<a href="images/arts/gerl.jpg" data-lightbox="mygallery" data-title="Stylized">
+						<img src="images/arts/gerl.jpg"></a>
+					<a href="images/arts/house.png" data-lightbox="mygallery" data-title="House of Sight">
+						<img src="images/arts/house.png"></a>
+					<a href="images/arts/tree.png" data-lightbox="mygallery" data-title="Isometric Tree">
+						<img src="images/arts/tree.png"></a>
+					<a href="images/arts/abstractgirl.jpg" data-lightbox="mygallery" data-title="Stylized girl">
+						<img src="images/arts/abstractgirl.jpg"></a>
+					<a href="images/arts/geerl.png" data-lightbox="mygallery" data-title="Simple">
+						<img src="images/arts/geerl.png"></a>
+					<a href="images/arts/altar.png" data-lightbox="mygallery" data-title="Isometric Altar">
+						<img src="images/arts/altar.png"></a>
+					<a href="images/arts/mononoke.jpg" data-lightbox="mygallery" data-title="Mononoke, Warcraft">
+						<img src="images/arts/mononoke.jpg"></a>
+					<a href="images/arts/muscleCar.jpg" data-lightbox="mygallery" data-title="Stylized Muscle Car">
+						<img src="images/arts/muscleCar.jpg"></a>
+					<a href="images/arts/revolver.jpg" data-lightbox="mygallery" data-title="Stylized Tri-Revolver">
+						<img src="images/arts/revolver.jpg"></a>
+					<a href="images/arts/shop.png" data-lightbox="mygallery" data-title="Isometric Night Shop">
+						<img src="images/arts/shop.png"></a>
+					<a href="images/arts/gasStation.png" data-lightbox="mygallery" data-title="Isometric Gas Station">
+						<img src="images/arts/gasStation.png"></a>
+					<a href="images/arts/Kvasir.jpg" data-lightbox="mygallery" data-title="Kvasir">
+						<img src="images/arts/Kvasir.jpg"></a>
+					<a href="images/arts/Mouse Character.jpg" data-lightbox="mygallery" data-title="3D Mouse Character">
+						<img src="images/arts/Mouse Character.jpg"></a>
+					<a href="images/arts/wang-tian.jpg" data-lightbox="mygallery" data-title="Wang-Tian">
+						<img src="images/arts/wang-tian.jpg"></a>
+		
+				</div>
+		
+		</div>
+
+	<footer>
+		<div class="socials">
+		<ul>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		</div>
+			<p>copyright &copy;2020 evee. designed by <span>KlentLabagday</span></p>
+
+	</footer>
+
+
+</body>
+</html>
